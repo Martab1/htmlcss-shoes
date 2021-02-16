@@ -9,6 +9,9 @@ body{
     font-family: 'Rubik Mono One', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* SECTION */
 
@@ -35,7 +38,7 @@ section:last-child h1{
     color: green;
 }
 
-section:first-child{
+section:first-child {
     background:red;
 }
 
@@ -48,4 +51,30 @@ section:last-child{
     
 }
 
+/* NAVIGATION */
 
+.navigation{
+    position: fixed;
+    right:20px;
+    top:20px;
+    z-index: 10;
+}
+
+
+.navigation li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    
+    
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: black;
+}
